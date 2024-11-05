@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Banner Tool</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != "dataLayer" ? "&l=" + l : "";
+            j.async = true;
+            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", "GTM-KFKMWWQH");
+    </script>
+    <!-- End Google Tag Manager -->
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="ef81160d-b68b-4615-8ed1-e45c04ef8f08"
+        type="text/javascript"></script>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFKMWWQH" height="0" width="0"
+            style="display: none; visibility: hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Logo" class="logo" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="categories.html">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">How to Create</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="career.html">CAREER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="request-pics.html">Request Pics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Search Icon -->
+            <div class="nav-search-container">
+                <a href="#" id="searchIcon">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+            <!-- Search Bar -->
+            <div id="searchBarContainer" class="search-bar-container">
+                <div class="input-group">
+                    <input type="text" class="form-control open_search" placeholder="Search">
+                    <button class="btn btn-outline-secondary" type="button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button id="closeIcon" class="btn btn-outline-secondary" type="button">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="text-white" style="text-align: start !important">
+                Categories
+            </h1>
+        </div>
+    </section>
+
+    <div class="container my-5">
+        <div class="categories__row">
+            <!-- Alphabet Card -->
+            <div class="categories__card">
+                <div class="categories__icon categories__hover">
+                    <img src="assets/images/category-images/alphabet.svg" alt="Alphabet Icon" />
+                </div>
+                <p class="categories__title">Alphabet</p>
+            </div>
+            <!-- Anniversary Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/anniversary.svg" alt="Anniversary Icon" />
+                </div>
+                <p class="categories__title">Anniversary</p>
+            </div>
+            <!-- Anniversary Wishes With Photo Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/anniversaryphoto.svg"
+                        alt="Anniversary Wishes With Photo Icon" />
+                </div>
+                <p class="categories__title">Anniversary Wishes With Photo</p>
+            </div>
+            <!-- Attitude Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/attitude.svg" alt="Attitude Icon" />
+                </div>
+                <p class="categories__title">Attitude</p>
+            </div>
+            <!-- Baby Birth Announcement Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/beach.svg" alt="Baby Birth Announcement Icon" />
+                </div>
+                <p class="categories__title">Baby Birth Announcement</p>
+            </div>
+            <!-- Beach Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/birthannouncement.svg" alt="Beach Icon" />
+                </div>
+                <p class="categories__title">Beach</p>
+            </div>
+            <!-- Alphabet Card -->
+            <div class="categories__card">
+                <div class="categories__icon categories__hover">
+                    <img src="assets/images/category-images/bhaidooj.svg" alt="Bhai Dooj Icon" />
+                </div>
+                <p class="categories__title">Bhai Dooj</p>
+            </div>
+            <!-- Anniversary Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/cakewithname.svg" alt="Birthday Cake With Name Icon" />
+                </div>
+                <p class="categories__title">Birth Day Cake with Name</p>
+            </div>
+            <!-- Anniversary Wishes With Photo Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/birthday-quotes.svg" alt="Birthday Quotes Icon" />
+                </div>
+                <p class="categories__title">Birthday Quotes</p>
+            </div>
+            <!-- Attitude Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/birthday-wishes.svg" alt="Birthday Wishes Icon" />
+                </div>
+                <p class="categories__title">Birthday Wishes</p>
+            </div>
+            <!-- Baby Birth Announcement Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/birthdaywithphoto.svg"
+                        alt="Birthday Wishes With Photo Icon" />
+                </div>
+                <p class="categories__title">Birthday Wishes With Photo</p>
+            </div>
+            <!-- Beach Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/christmas-invitation.svg" alt="Christmas Invitation Icon" />
+                </div>
+                <p class="categories__title">Christmas Invitation Cards</p>
+            </div>
+            <!-- Alphabet Card -->
+            <div class="categories__card">
+                <div class="categories__icon categories__hover">
+                    <img src="assets/images/category-images/congratulations.svg" alt="Congratulations Icon" />
+                </div>
+                <p class="categories__title">Congratulations</p>
+            </div>
+            <!-- Anniversary Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/diwali-corporate-wishes.svg"
+                        alt="Corporate Diwali Wishes Icon" />
+                </div>
+                <p class="categories__title">Corporate Diwali Wishes</p>
+            </div>
+            <!-- Anniversary Wishes With Photo Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/couple.svg" alt="Couple Icon" />
+                </div>
+                <p class="categories__title">Couple</p>
+            </div>
+            <!-- Attitude Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/covid-19-coronavirus.svg" alt="Covid-19 Coronavirus Icon" />
+                </div>
+                <p class="categories__title">Covid-19 Coronavirus</p>
+            </div>
+            <!-- Baby Birth Announcement Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/daughtersday.svg" alt="Daughters Day Icon" />
+                </div>
+                <p class="categories__title">Daughters Day</p>
+            </div>
+            <!-- Beach Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/dhanteras-corporate.svg" alt="Dhanteras Corporate Wishes" />
+                </div>
+                <p class="categories__title">Dhanteras Corporate Wishes</p>
+            </div>
+            <!-- Alphabet Card -->
+            <div class="categories__card">
+                <div class="categories__icon categories__hover">
+                    <img src="assets/images/category-images/goddess-laxmi.svg" alt="Dhanteras Wishes Icon" />
+                </div>
+                <p class="categories__title">Dhanteras Wishes</p>
+            </div>
+            <!-- Anniversary Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/diwali.svg" alt="Diwali Icon" />
+                </div>
+                <p class="categories__title">Diwali</p>
+            </div>
+            <!-- Anniversary Wishes With Photo Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/diwali-new-year.svg" alt="Diwali New Year Wishes Icon" />
+                </div>
+                <p class="categories__title">Diwali New Year Wishes</p>
+            </div>
+            <!-- Beach Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/happy-diwali-wishes.svg"
+                        alt="Diwali Wishes With Photo Icon" />
+                </div>
+                <p class="categories__title">Diwali Wishes With Photo</p>
+            </div>
+
+            <!-- Attitude Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/dolls.svg" alt="Dolls Icon" />
+                </div>
+                <p class="categories__title">Dolls</p>
+            </div>
+            <!-- Baby Birth Announcement Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/durgapuja.svg" alt="Durgapuja Icon" />
+                </div>
+                <p class="categories__title">Durgapuja</p>
+            </div>
+            <!-- Alphabet Card -->
+            <div class="categories__card">
+                <div class="categories__icon categories__hover">
+                    <img src="assets/images/category-images/dussehra.svg" alt="Dussehra Icon" />
+                </div>
+                <p class="categories__title">Dussehra</p>
+            </div>
+            <!-- Anniversary Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/easter-day.svg" alt="Easter Day Icon" />
+                </div>
+                <p class="categories__title">Easter Day</p>
+            </div>
+            <!-- Anniversary Wishes With Photo Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/eid.svg" alt="Eid Icon" />
+                </div>
+                <p class="categories__title">Eid</p>
+            </div>
+            <!-- Attitude Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/fathers-day.svg" alt="Fathers Day Icon" />
+                </div>
+                <p class="categories__title">Fathers Day</p>
+            </div>
+            <!-- Baby Birth Announcement Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/friendship.svg" alt="Friendship Icon" />
+                </div>
+                <p class="categories__title">Friendship</p>
+            </div>
+            <!-- Beach Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/ganesh-chaturthi.svg" alt="Ganesh Chaturthi Icon" />
+                </div>
+                <p class="categories__title">Ganesh Chaturthi</p>
+            </div>
+            <!-- Alphabet Card -->
+            <div class="categories__card">
+                <div class="categories__icon categories__hover">
+                    <img src="assets/images/category-images/get-well-soon.svg" alt="Get Well Soon Icon" />
+                </div>
+                <p class="categories__title">Get Well Soon</p>
+            </div>
+            <!-- Anniversary Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/good-evening.svg" alt="Good Evening Icon" />
+                </div>
+                <p class="categories__title">Good Evening</p>
+            </div>
+            <!-- Anniversary Wishes With Photo Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/good-friday.svg" alt="Good Friday Icon" />
+                </div>
+                <p class="categories__title">Good Friday</p>
+            </div>
+            <!-- Attitude Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/good-luck.svg" alt="Good Luck Icon" />
+                </div>
+                <p class="categories__title">Good Luck</p>
+            </div>
+            <!-- Baby Birth Announcement Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/good-morning.svg" alt="Good Morning Icon" />
+                </div>
+                <p class="categories__title">Good Morning</p>
+            </div>
+            <!-- Beach Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/morningquote.svg" alt="Morning Quote Icon" />
+                </div>
+                <p class="categories__title">Morning Quote</p>
+            </div>
+            <!-- Anniversary Wishes With Photo Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/good-night.svg" alt="Good Night Icon" />
+                </div>
+                <p class="categories__title">Good Night</p>
+            </div>
+            <!-- Attitude Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/guru-purnima.svg" alt="Guru Purnima Icon" />
+                </div>
+                <p class="categories__title">Guru Purnima</p>
+            </div>
+            <!-- Baby Birth Announcement Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/halloween.svg" alt="Halloween Icon" />
+                </div>
+                <p class="categories__title">Halloween</p>
+            </div>
+            <!-- Beach Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/hanuman.svg" alt="Hanuman Icon" />
+                </div>
+                <p class="categories__title">Hanuman</p>
+            </div>
+            <!-- Alphabet Card -->
+            <div class="categories__card">
+                <div class="categories__icon categories__hover">
+                    <img src="assets/images/category-images/happy-makar-sankranti.svg"
+                        alt="Happy Makar Sankranti Icon" />
+                </div>
+                <p class="categories__title">Happy Makar Sankranti</p>
+            </div>
+            <!-- Anniversary Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/muharram.svg" alt="Muharram Icon" />
+                </div>
+                <p class="categories__title">Muharram</p>
+            </div>
+            <!-- Anniversary Wishes With Photo Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/happy-new-year.svg" alt="Happy New Year Icon" />
+                </div>
+                <p class="categories__title">Happy New Year</p>
+            </div>
+            <!-- Attitude Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/new-year-2023.svg" alt="Happy New Year 2024 Icon" />
+                </div>
+                <p class="categories__title">Happy New Year 2024</p>
+            </div>
+            <!-- Baby Birth Announcement Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/newyear.svg" alt="Happy New Year Wishes With Photo Icon" />
+                </div>
+                <p class="categories__title">Happy New Year Wishes With Photo</p>
+            </div>
+            <!-- Beach Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/happyonam.svg" alt="Happy Onam Icon" />
+                </div>
+                <p class="categories__title">Happy Onam</p>
+            </div>
+            <!-- Beach Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/happy-weekend.svg" alt="Happy Weekend Icon" />
+                </div>
+                <p class="categories__title">Happy Weekend</p>
+            </div>
+            <!-- Beach Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/have-a-nice-day.svg" alt="Have a nice day Icon" />
+                </div>
+                <p class="categories__title">Have a nice day</p>
+            </div>
+            <!-- Anniversary Wishes With Photo Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/holi.svg" alt="Holi Icon" />
+                </div>
+                <p class="categories__title">Holi</p>
+            </div>
+            <!-- Attitude Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/i-miss-you.svg" alt="I Miss You Icon" />
+                </div>
+                <p class="categories__title">I Miss You</p>
+            </div>
+            <!-- Baby Birth Announcement Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/independence-day.svg" alt="Independence Day Icon" />
+                </div>
+                <p class="categories__title">Independence Day</p>
+            </div>
+            <!-- Anniversary Wishes With Photo Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/independence-day-frame.svg"
+                        alt="Independence Day Photo Frame Icon" />
+                </div>
+                <p class="categories__title">Independence Day Photo Frame</p>
+            </div>
+
+            <!-- Baby Birth Announcement Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/invitation-card.svg" alt="Invitation Icon" />
+                </div>
+                <p class="categories__title">Invitation</p>
+            </div>
+            <!-- Anniversary Wishes With Photo Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/itsaboy.svg" alt="It's Boy Icon" />
+                </div>
+                <p class="categories__title">It's Boy</p>
+            </div>
+            <!-- Beach Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/itsagirl.svg" alt="It's Girl Icon" />
+                </div>
+                <p class="categories__title">It's Girl</p>
+            </div>
+            <!-- Beach Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/rathyatra-1.svg" alt="Jagannath Rath Yatra Icon" />
+                </div>
+                <p class="categories__title">Jagannath Rath Yatra</p>
+            </div>
+            <!-- Beach Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/janmashtami.svg" alt="Janmashtami Icon" />
+                </div>
+                <p class="categories__title">Janmashtami</p>
+            </div>
+            <!-- Anniversary Wishes With Photo Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/jewellery.svg" alt="Jewellery Icon" />
+                </div>
+                <p class="categories__title">Jewellery</p>
+            </div>
+            <!-- Attitude Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/shubh-labh.svg" alt="Labh Pancham Icon" />
+                </div>
+                <p class="categories__title">Labh Pancham</p>
+            </div>
+            <!-- Baby Birth Announcement Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/laxmi-pujan.svg" alt="Laxmi Puja Invitation Cards Icon" />
+                </div>
+                <p class="categories__title">Laxmi Puja Invitation Cards</p>
+            </div>
+            <!-- Beach Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/lohri.svg" alt="Lohri Icon" />
+                </div>
+                <p class="categories__title">Lohri</p>
+            </div>
+            <!-- Beach Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/love.svg" alt="Love Icon" />
+                </div>
+                <p class="categories__title">Love</p>
+            </div>
+            <!-- Beach Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/maha-shivratri.svg" alt="Maha Shivratri Icon" />
+                </div>
+                <p class="categories__title">Maha Shivratri</p>
+            </div>
+            <!-- Anniversary Wishes With Photo Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/mahavirjayanti.svg" alt="Mahavir Jayanti Icon" />
+                </div>
+                <p class="categories__title">Mahavir Jayanti</p>
+            </div>
+            <!-- Attitude Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/merry-christmas.svg" alt="Merry Christmas Icon" />
+                </div>
+                <p class="categories__title">Merry Christmas</p>
+            </div>
+            <!-- Baby Birth Announcement Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/babymilestone.svg" alt="Month Baby Milestones Icon" />
+                </div>
+                <p class="categories__title">Month Baby Milestones</p>
+            </div>
+            <!-- Beach Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/mothersday.svg" alt="Mothers Day Icon" />
+                </div>
+                <p class="categories__title">Mothers Day</p>
+            </div>
+            <!-- Beach Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/navratri.svg" alt="Navratri Icon" />
+                </div>
+                <p class="categories__title">Navratri</p>
+            </div>
+            <!-- Beach Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/new-year-corporate.svg"
+                        alt="New Year Corporate Wishes Icon" />
+                </div>
+                <p class="categories__title">New Year Corporate Wishes</p>
+            </div>
+            <!-- Anniversary Wishes With Photo Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/pongal.svg" alt="Pongal Icon" />
+                </div>
+                <p class="categories__title">Pongal</p>
+            </div>
+            <!-- Attitude Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/professional-birthday-wishes.svg"
+                        alt="Professional Birthday Wishes Icon" />
+                </div>
+                <p class="categories__title">Professional Birthday Wishes</p>
+            </div>
+            <!-- Baby Birth Announcement Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/profile-picture.svg" alt="Profile Picture Icon" />
+                </div>
+                <p class="categories__title">Profile Picture</p>
+            </div>
+            <!-- Beach Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/raksha-bandhan.svg" alt="Raksha Bandhan Icon" />
+                </div>
+                <p class="categories__title">Raksha Bandhan</p>
+            </div>
+            <!-- Beach Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/raksha-bandhan-frame.svg"
+                        alt="Raksha Bandhan Photo Frame Icon" />
+                </div>
+                <p class="categories__title">Raksha Bandhan Photo Frame</p>
+            </div>
+            <!-- Beach Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/ramnavami.svg" alt="Rama Navami Icon" />
+                </div>
+                <p class="categories__title">Rama Navami</p>
+            </div>
+
+            <!-- Beach Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/ramadan-mubarak.svg" alt="Ramadan Mubarak Icon" />
+                </div>
+                <p class="categories__title">Ramadan Mubarak</p>
+            </div>
+
+            <!-- Beach Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/republic-day.svg" alt="Republic Day Icon" />
+                </div>
+                <p class="categories__title">Republic Day</p>
+            </div>
+            <!-- Anniversary Wishes With Photo Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/sorry.svg" alt="Sorry Icon" />
+                </div>
+                <p class="categories__title">Sorry</p>
+            </div>
+            <!-- Beach Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/teachers-day.svg" alt="Teacher's Day Icon" />
+                </div>
+                <p class="categories__title">Teacher's Day</p>
+            </div>
+            <!-- Attitude Card -->
+
+            <!-- Baby Birth Announcement Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/teachers-day-with-photo.svg"
+                        alt="Teachers Day with Photo Icon" />
+                </div>
+                <p class="categories__title">Teachers Day with Photo</p>
+            </div>
+            <!-- Beach Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/thank-you.svg" alt="Thank You Icon" />
+                </div>
+                <p class="categories__title">Thank You</p>
+            </div>
+            <!-- Beach Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/valentine-day.svg" alt="Valentine Day Icon" />
+                </div>
+                <p class="categories__title">Valentine Day</p>
+            </div>
+            <!-- Beach Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/womens-day.svg" alt="Womens Day Icon" />
+                </div>
+                <p class="categories__title">Womens Day</p>
+            </div>
+            <!-- Beach Card -->
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/environment-1.svg" alt="World Environment Day Icon" />
+                </div>
+                <p class="categories__title">World Environment Day</p>
+            </div>
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/1month.svg" alt="1 Month Baby Photo Frame Icon" />
+                </div>
+                <p class="categories__title">1 Month Baby Photo Frame</p>
+            </div>
+
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/2months.svg" alt="2 Month Baby Photo Frame Icon" />
+                </div>
+                <p class="categories__title">2 Month Baby Photo Frame</p>
+            </div>
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/3months.svg" alt="3 Month Baby Photo Frame Icon" />
+                </div>
+                <p class="categories__title">3 Month Baby Photo Frame</p>
+            </div>
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/4months.svg" alt="4 Month Baby Photo Frame Icon" />
+                </div>
+                <p class="categories__title">4 Month Baby Photo Frame</p>
+            </div>
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/5months.svg" alt="5 Month Baby Photo Frame Icon" />
+                </div>
+                <p class="categories__title">5 Month Baby Photo Frame</p>
+            </div>
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/6months.svg" alt="6 Month Baby Photo Frame Icon" />
+                </div>
+                <p class="categories__title">6 Month Baby Photo Frame</p>
+            </div>
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/7months.svg" alt="7 Month Baby Photo Frame Icon" />
+                </div>
+                <p class="categories__title">7 Month Baby Photo Frame</p>
+            </div>
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/8months.svg" alt="8 Month Baby Photo Frame Icon" />
+                </div>
+                <p class="categories__title">8 Month Baby Photo Frame</p>
+            </div>
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/9months.svg" alt="9 Month Baby Photo Frame Icon" />
+                </div>
+                <p class="categories__title">9 Month Baby Photo Frame</p>
+            </div>
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/10months.svg" alt="10 Month Baby Photo Frame Icon" />
+                </div>
+                <p class="categories__title">10 Month Baby Photo Frame</p>
+            </div>
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/11months.svg" alt="11 Month Baby Photo Frame Icon" />
+                </div>
+                <p class="categories__title">11 Month Baby Photo Frame</p>
+            </div>
+            <div class="categories__card">
+                <div class="categories__icon">
+                    <img src="assets/images/category-images/12months.svg" alt="12 Month Baby Photo Frame Icon" />
+                </div>
+                <p class="categories__title">12 Month Baby Photo Frame</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer  -->
+    <footer class="main-footer">
+        <div class="footer-mega">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-menu">
+                            <h2>Popular</h2>
+                            <ul>
+                                <li>
+                                    <a href="#">Birthday Wishes</a>
+                                </li>
+                                <li>
+                                    <a href="#">Anniversary</a>
+                                </li>
+                                <li>
+                                    <a href="#">Good Morning</a>
+                                </li>
+                                <li>
+                                    <a href="#">Congratulations</a>
+                                </li>
+                                <li>
+                                    <a href="#">Get well soon</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-menu">
+                            <h2>Christmas &amp; New Year</h2>
+                            <ul>
+                                <li>
+                                    <a href="#">Happy New Year</a>
+                                </li>
+                                <li>
+                                    <a href="#">Merry Christmas</a>
+                                </li>
+                                <li>
+                                    <a href="#">New Year Corporate Wishes</a>
+                                </li>
+                                <li>
+                                    <a href="#">Christmas Invitations Cards</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <div class="footer-menu">
+                            <h2>Daily Wishes</h2>
+                            <ul>
+                                <li>
+                                    <a href="#">Good Morning</a>
+                                </li>
+                                <li>
+                                    <a href="#">Good Night</a>
+                                </li>
+                                <li>
+                                    <a href="#">Have a nice day</a>
+                                </li>
+                                <li>
+                                    <a href="#">Good Evening</a>
+                                </li>
+                                <li>
+                                    <a href="#">Thank You</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="footer-menu">
+                            <h2>More Greeting Cards</h2>
+                            <ul>
+                                <li>
+                                    <a href="#">Love</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sorry</a>
+                                </li>
+                                <li>
+                                    <a href="#">Jewellery</a>
+                                </li>
+                                <li>
+                                    <a href="#">Friendship</a>
+                                </li>
+                                <li>
+                                    <a href="#">I Miss You</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <div class="footer-menu">
+                            <h2>Quick Links</h2>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li>
+                                    <a href="#">How to Create</a>
+                                </li>
+                                <li>
+                                    <a href="#">Request Pics</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li style="opacity: 0">
+                                    <a href="#">Blog</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-7">
+                        <div class="copyright">
+                            <p>Copyright © 2024 All rights reserved wonderflyer.com</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="btn-instagram">
+                            <a target="_blank" aria-label="Instagram" rel="noopener noreferrer" href="#">Follow us on
+                                <i class="fab fa-instagram"></i> /wonderflyer.offical</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="sticky-instagram">
+        <a target="_blank" aria-label="Instagram" rel="noopener noreferrer" href="#"><i
+                class="fab fa-instagram"></i></a>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+
+</html>
